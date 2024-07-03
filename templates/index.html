@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Blend</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <navbar>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">PDF Blend</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      PDF tools
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">PDF Merger</a></li>
+                      <li><a class="dropdown-item" href="#">PDF Spliter</a></li>
+                      <li><a class="dropdown-item" href="#">PDF Compresser</a></li>
+                      <li><a class="dropdown-item" href="#">PDF Unlocker</a></li>
+                      <li><a class="dropdown-item" href="#">PDF Reader</a></li>
+
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Suggest Some Tools To Add in future  </a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search for tools</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </navbar>
+    <div class="container" id="">
+        <h1>PDF Merger</h1>
+        <h5>Choose pdf's to merge</h5>
+        <form method="post" action="/merge" enctype="multipart/form-data">
+              <div class="mb-3">
+                <label for="formFileMultiple" class="form-label">Select files from computer</label>
+                <input class="form-control" name="pdfs" type="file" id="formFileMultiple" multiple accept=".pdf">
+                <input class="btn btn-primary my-4" type="submit" value="Sumbit">
+              </div>
+        </form>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
